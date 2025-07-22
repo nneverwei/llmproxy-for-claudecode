@@ -1,0 +1,38 @@
+{
+  "server": {
+    "host": "127.0.0.1",
+    "port": 8000,
+    "max_tokens": 8192
+  },
+  "providers": {
+    "siliconflow": {
+      "base_url": "https://api.siliconflow.cn/v1",
+      "api_key": "sk-fdecmcjxrxjbcqhggmstrcmamyalbzhblbuvbrxxjpblrkxc",
+      "models": {
+        "default": "Qwen/Qwen3-30B-A3B",
+        "claude-3-5-haiku-20241022": "Qwen/Qwen2.5-7B-Instruct",
+        "claude-3-5-sonnet-20241022": "Qwen/Qwen3-235B-A22B",
+        "claude-3-opus-20240229": "Qwen/Qwen2.5-72B-Instruct"
+      }
+    },
+    "openai": {
+      "base_url": "https://api.openai.com/v1",
+      "api_key": "your_openai_api_key_here",
+      "models": {
+        "claude-3-5-haiku-20241022": "gpt-3.5-turbo",
+        "claude-3-5-sonnet-20241022": "gpt-4",
+        "claude-3-opus-20240229": "gpt-4-turbo"
+      }
+    },
+    "deepseek": {
+      "base_url": "https://api.deepseek.com/v1",
+      "api_key": "your_deepseek_api_key_here",
+      "models": {
+        "claude-3-5-haiku-20241022": "deepseek-chat",
+        "claude-3-5-sonnet-20241022": "deepseek-chat",
+        "claude-3-opus-20240229": "deepseek-coder"
+      }
+    }
+  },
+  "default_provider": "siliconflow"
+}
