@@ -5,6 +5,7 @@
 [![aiohttp](https://img.shields.io/badge/aiohttp-3.8+-orange.svg)](https://aiohttp.readthedocs.io/)
 
 > 🔄 将任何OpenAI兼容接口转换为Claude API格式，让你在Claude Code中无缝使用其他厂商的大模型服务
+（注：本身代理服务curl可以正常流式，在claude code中会阻塞待排查）
 
 ## ✨ 功能特性
 
@@ -70,9 +71,9 @@ python claude_proxy.py
 
 | 提供商 | API端点 | 说明 |
 |--------|---------|------|
-| 默认提供商 | `http://127.0.0.1:8000/v1` | 使用配置中的默认提供商 |
-| 硅基流动 | `http://127.0.0.1:8000/siliconflow/v1` | 专门使用硅基流动 |
-| DeepSeek | `http://127.0.0.1:8000/deepseek/v1` | 专门使用DeepSeek |
+| 默认提供商 | `http://127.0.0.1:8000` | 使用配置中的默认提供商 |
+| 硅基流动 | `http://127.0.0.1:8000/siliconflow` | 专门使用硅基流动 |
+| DeepSeek | `http://127.0.0.1:8000/deepseek` | 专门使用DeepSeek |
 
 ## 📡 API端点
 
